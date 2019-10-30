@@ -18,7 +18,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" id="home">
-  <nav id="main-nav" class="shadow navbar d-flex fixed-top px-5 py-3 navbar-expand-lg navbar-light bg-warning">
+  <nav id="main-nav" class="shadow navbar d-flex fixed-top px-5 py-3 navbar-expand-lg navbar-light bg-success">
     <a class="navbar-brand mr-auto" href="#home">Wed<span class="text-danger">&</span>Dings</a>
     <a href="index-es.html" class="btn btn-danger ml-5 mr-2 order-lg-last ">Español</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -426,7 +426,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 100, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
