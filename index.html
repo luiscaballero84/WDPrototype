@@ -33,7 +33,7 @@
     
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-right">
+      <ul class="navbar-nav ml-auto text-right smooth-scroll">
         <li class="nav-item">
           <a class="nav-link" href="#home-section">Home <span class="sr-only">(current)</span></a>
         </li>
@@ -404,29 +404,39 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
  // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+        
 
-     // Init Scrollspy
-    
-    $('body').scrollspy({ target: '#main-nav' });
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-    // Smooth Scrolling
-    $("#main-nav a").on('click', function (event) {
-     if (this.hash !== "") {
-       event.preventDefault();
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-       const hash = this.hash;
+      // Store hash
+      var hash = this.hash;
 
-       $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function () {
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
 
-         window.location.hash = hash;
-       });
-      }
-    });
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+     
 </script>
   
   <!--
