@@ -18,7 +18,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" id="home">
-  <nav id="main-nav" class="shadow navbar d-flex fixed-top px-5 py-3 navbar-expand-lg navbar-light bg-danger">
+  <nav id="main-nav" class="shadow navbar d-flex fixed-top px-5 py-3 navbar-expand-lg navbar-light bg-primary">
     <a class="navbar-brand mr-auto" href="#home">Wed<span class="text-danger">&</span>Dings</a>
     <a href="index-es.html" class="btn btn-danger ml-5 mr-2 order-lg-last ">Español</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -364,7 +364,7 @@
   
   <script>
  // Get the current year for the copyright
-$('#year').text(new Date().getFullYear());
+//$('#year').text(new Date().getFullYear());
         
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -389,6 +389,11 @@ $(document).ready(function(){
       });
     } // End if
   });
+});
+    
+    // Hide collapsible Navbar on click
+    $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
 });
 </script>
      
