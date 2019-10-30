@@ -6,4 +6,8 @@ body {
   position: relative;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
