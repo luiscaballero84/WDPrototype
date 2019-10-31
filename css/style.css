@@ -6,6 +6,11 @@ body {
   position: relative;
 }
 
+ .navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
 /* RESPONSIVE TYPOGRAPHY */
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
