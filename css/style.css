@@ -21,6 +21,11 @@ body {
     opacity: 0;
 }
 
+.anchor {
+  padding-top: 40px; 
+  margin-top: -40px;
+}
+
 
 /* RESPONSIVE TYPOGRAPHY */
 /* Extra small devices (portrait phones, less than 576px) */
