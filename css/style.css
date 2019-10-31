@@ -16,13 +16,17 @@ body {
 /* No media query since this is the default in Bootstrap */
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     h1 {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
+    }
+    
+    small {
+      font-size: 1.4rem;
     }
 }
 
@@ -31,12 +35,18 @@ h1 {
     h1 {
         font-size: 2.4rem;
     }
+    small {
+      font-size: 1.4rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     h1 {
-        font-size: 2.6rem;
+        font-size: 3rem;
+    }
+    small {
+        font-size: 2rem;
     }
 }
 
