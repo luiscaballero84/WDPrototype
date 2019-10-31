@@ -68,7 +68,9 @@ small {
 @media (min-width: 992px) {
     h1 {
         font-size: 3rem;
+      }
 }
+
 
 @media (min-width: 992px) {
     small {
@@ -90,5 +92,3 @@ small {
   scroll-behavior: smooth;
 }
 */
-
-
