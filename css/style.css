@@ -9,6 +9,7 @@ body {
 /* RESPONSIVE TYPOGRAPHY */
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
+/*
 h1 {
     font-size: 1rem;
 }
@@ -33,6 +34,8 @@ h1 {
         font-size: 1.6rem;
     }
 }
+
+/*
 
 /*
 @media (max-width: 320px) {
