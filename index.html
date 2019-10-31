@@ -18,7 +18,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" id="home">
-  <nav id="main-nav" class="shadow navbar d-flex fixed-top px-md-5 py-md-3 navbar-expand-lg navbar-light bg-light">
+  <nav id="main-nav" class="shadow navbar d-flex fixed-top px-md-5 py-md-3 navbar-expand-lg navbar-light bg-warning">
     <a class="navbar-brand mr-auto" href="#home">Wed<span class="text-danger">&</span>Dings</a>
     <a href="index-es.html" class="btn btn-danger ml-md-5 mr-ml-2 order-lg-last ">Español</a>
     <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +88,7 @@
       <div class="row pt-5 pb-5 ">
         
         <div class="col-md-6 order-lg-12">
-          <h1 class="display-4">Philosophie</h1>
+          <h1 class="font-weight-light">Philosophie</h1>
           <small class="text-danger">Individualität und Charakter</small>
           <p class="lead pt-5 text-dark">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi 
@@ -118,7 +118,7 @@
       <div class="container pt-3">
         <div class="row pt-5 pb-5 mb-5">
           <div class="col-lg-7  ">
-            <h1 class="display-4">Unsere Leistungen
+            <h1 class="font-weight-light">Unsere Leistungen
             </h1>
             <small class="text-danger">Wie kann ich Dir helfen?</small>
             
@@ -150,7 +150,7 @@
       <div class="container pt-3 ">
         <div class="row pt-5 pb-5 mb-5">
           <div class="col-lg-6 d-lg-block order-md-2">
-            <h1 class="display-4">Über mich
+            <h1 class="font-weight-light">Über mich
             </h1>
             <small class="text-danger">Design von Kopf bis Fuß</small>
             
@@ -184,7 +184,7 @@
     <div class="container pt-3">
       <div class="row pt-5 ">
         <div class="col-12">
-          <h1 class="text-center pb-4">Referenzen</h1>
+          <h1 class="text-center pb-4 font-weight-light">Referenzen</h1>
         </div>
 
         <div class="col-lg-4 mb-5">
@@ -253,7 +253,7 @@
     <div class="container pt-5">
       <div class="row pt-5">
         <div class="col-lg-6">
-          <h1 class="display-4 pb-3">Kontakt</h1>
+          <h1 class="font-weight-light pb-3">Kontakt</h1>
           <h3 class="lead">Erzählt mir Deine Träume - ich lasse sie wahr werden!</h3>
           <p class="lead">Wir haben uns noch nicht kennengelernt? Dann nutze bitte das Kontaktformular. Ich melde mich so schnell wie möglich bei Dir.
  
@@ -397,6 +397,21 @@ $(document).ready(function(){
     // Hide collapsible Navbar on click
    $('.navbar-nav>li>a').on('click', function(){
    $('.navbar-collapse').collapse('hide');
+});
+</script>
+
+<script>
+  // scroll functions
+$(window).scroll(function(e) {
+
+    // add/remove class to navbar when scrolling to hide/show
+    var scroll = $(window).scrollTop();
+    if (scroll >= 150) {
+        $('.navbar').addClass("navbar-hide");
+    } else {
+        $('.navbar').removeClass("navbar-hide");
+    }
+
 });
 </script>
      
