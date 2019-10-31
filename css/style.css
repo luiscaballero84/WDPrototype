@@ -11,6 +11,17 @@ body {
     box-shadow: none;
   }
 
+.navbar {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.navbar-hide {
+    pointer-events: none;
+    opacity: 0;
+}
+
+
 /* RESPONSIVE TYPOGRAPHY */
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
@@ -19,14 +30,19 @@ h1 {
     font-size: 2.4rem;
 }
 
+small {
+    font-size: 1.4rem;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     h1 {
         font-size: 2.4rem;
     }
-    
+}
+@media (min-width: 576px) {
     small {
-      font-size: 1.4rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -35,6 +51,9 @@ h1 {
     h1 {
         font-size: 2.4rem;
     }
+}
+
+@media (min-width: 768px) {
     small {
       font-size: 1.4rem;
     }
@@ -44,7 +63,9 @@ h1 {
 @media (min-width: 992px) {
     h1 {
         font-size: 3rem;
-    }
+}
+
+@media (min-width: 992px) {
     small {
         font-size: 2rem;
     }
