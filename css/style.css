@@ -6,11 +6,13 @@ body {
   position: relative;
 }
 
+/*
 @media (max-width: 320px) {
 .body {
       width: 90%;   
      }
 }
+*/
 
 /* html {
   scroll-behavior: smooth;
