@@ -31,7 +31,7 @@ h1 {
 }
 
 small {
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -42,7 +42,7 @@ small {
 }
 @media (min-width: 576px) {
     small {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 }
 
@@ -55,7 +55,7 @@ small {
 
 @media (min-width: 768px) {
     small {
-      font-size: 1.4rem;
+      font-size: 1rem;
     }
 }
 
@@ -67,7 +67,7 @@ small {
 
 @media (min-width: 992px) {
     small {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 }
 
